@@ -78,11 +78,6 @@ def getScanResult(scanId):
   
   return scanResult
 
-spiderUntilFinished('http://challenge01.root-me.org/web-client/ch26/?p=prices#odin')
-scanId = scanUntilFinished('http://challenge01.root-me.org/web-client/ch26/?p=prices#odin')
-getScanResult(scanId)
-
-
 def runScan(url):
   if healthCheck()==False:
     os.system("zap.sh --daemon &")
